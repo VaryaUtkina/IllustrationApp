@@ -11,6 +11,7 @@
 		4833A0B72BA8B2800058A2F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833A0B62BA8B2800058A2F4 /* ContentView.swift */; };
 		4833A0B92BA8B2820058A2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4833A0B82BA8B2820058A2F4 /* Assets.xcassets */; };
 		4833A0BC2BA8B2820058A2F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4833A0BB2BA8B2820058A2F4 /* Preview Assets.xcassets */; };
+		4833A0C32BA8B2B20058A2F4 /* IllustrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833A0C22BA8B2B20058A2F4 /* IllustrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4833A0B62BA8B2800058A2F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4833A0B82BA8B2820058A2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4833A0BB2BA8B2820058A2F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4833A0C22BA8B2B20058A2F4 /* IllustrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				4833A0B42BA8B2800058A2F4 /* IllustrationAppApp.swift */,
 				4833A0B62BA8B2800058A2F4 /* ContentView.swift */,
+				4833A0C22BA8B2B20058A2F4 /* IllustrationView.swift */,
 				4833A0B82BA8B2820058A2F4 /* Assets.xcassets */,
 				4833A0BA2BA8B2820058A2F4 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4833A0C32BA8B2B20058A2F4 /* IllustrationView.swift in Sources */,
 				4833A0B72BA8B2800058A2F4 /* ContentView.swift in Sources */,
 				4833A0B52BA8B2800058A2F4 /* IllustrationAppApp.swift in Sources */,
 			);
