@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var animationStart = false
+    @State private var isPresented = false
     
     var body: some View {
         ZStack {
@@ -90,11 +91,52 @@ struct HomeView: View {
                         .easeInOut(duration: 0.5).delay(0.6),
                         value: animationStart
                     )
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        CustomButton(action: { isPresented.toggle() } )
+                            .opacity(animationStart ? 1 : 0)
+                            .animation(
+                                .easeInOut(duration: 0.5).delay(0.75),
+                                value: animationStart
+                            )
+                        Spacer()
+                    }
+                    Spacer()
+                }
             }
+        }
+        .sheet(isPresented: $isPresented) {
+            IllustrationView()
         }
         .onAppear() {
             animationStart.toggle()
         }
+    }
+}
+
+struct CustomButton: View {
+    let action: () -> Void
+    
+    var body: some View {
+        Button {
+            action()
+        } label: {
+            Label (
+                title: { Text("Look what I've done!") },
+                icon: { Image(systemName: "pawprint.circle.fill") }
+            )
+            .foregroundStyle(.start)
+            .font(.title2)
+            .fontWeight(.bold)
+        }
+        .frame(
+            width: UIScreen.main.bounds.width - 80,
+            height: UIScreen.main.bounds.height / 15
+        )
+        .background(Color.gray.opacity(0.7))
+        .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 }
 
