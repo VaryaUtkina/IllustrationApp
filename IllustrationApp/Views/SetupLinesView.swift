@@ -1,42 +1,11 @@
 //
-//  IllustrationView.swift
+//  SetupLinesView.swift
 //  IllustrationApp
 //
-//  Created by Варвара Уткина on 18.03.2024.
+//  Created by Варвара Уткина on 19.03.2024.
 //
 
 import SwiftUI
-
-struct IllustrationView: View {
-    var body: some View {
-        GeometryReader { geometry in
-            let width = geometry.size.width
-            let height = geometry.size.height
-            let size = min(width, height)
-            let cell = Int(size * 0.01)
-            
-            SetupLines(cell: cell)
-        }
-    }
-}
-
-struct Line: View {
-    let fromX: Int
-    let fromY: Int
-    let toX: Int
-    let toY: Int
-    
-    var body: some View {
-        Path { path in
-            path.move(to: CGPoint(x: fromX, y: fromY))
-            path.addLine(to: CGPoint(x: toX, y: toY))
-        }
-        .stroke(
-            Color.black,
-            style: StrokeStyle(lineWidth: 1)
-        )
-    }
-}
 
 struct SetupLines: View {
     let cell: Int
@@ -1071,7 +1040,21 @@ struct SetupLines: View {
     }
 }
 
-#Preview {
-    IllustrationView()
-        .frame(width: 300, height: 300)
+struct Line: View {
+    let fromX: Int
+    let fromY: Int
+    let toX: Int
+    let toY: Int
+    
+    var body: some View {
+        Path { path in
+            path.move(to: CGPoint(x: fromX, y: fromY))
+            path.addLine(to: CGPoint(x: toX, y: toY))
+        }
+        .stroke(
+            Color.black,
+            style: StrokeStyle(lineWidth: 1)
+        )
+    }
 }
+

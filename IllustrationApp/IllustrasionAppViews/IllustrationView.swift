@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  IllustrationView.swift
 //  IllustrationApp
 //
-//  Created by Варвара Уткина on 18.03.2024.
+//  Created by Варвара Уткина on 19.03.2024.
 //
 
 import SwiftUI
 
-struct HomeView: View {
+struct IllustrationView: View {
     @State private var animationStart = false
     
     var body: some View {
@@ -23,7 +23,7 @@ struct HomeView: View {
                 )
                 .ignoresSafeArea()
                 
-                IllustrationView()
+                DogView()
                     .frame(
                         width: size - 32,
                         height: size - 32,
@@ -41,12 +41,12 @@ struct HomeView: View {
                     )
             }
         }
-        .onTapGesture {
+        .onAppear {
             animationStart.toggle()
         }
     }
 }
 
 #Preview {
-    HomeView()
+    IllustrationView()
 }
