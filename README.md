@@ -3,7 +3,7 @@
 This app on SwiftUI uses animation
 
 <p align="center">
-    <img src="https://github.com/VaryaUtkina/IllustrationApp/blob/6b59f5483c17f3c4223995b4fbd52ab9249e8e41/Gif%20illustration%20App.gif" width=80% height=80%>
+    <img src="https://github.com/VaryaUtkina/IllustrationApp/blob/6b59f5483c17f3c4223995b4fbd52ab9249e8e41/Gif%20illustration%20App.gif" width=30% height=30%>
 </p>
 
 ## Screens:
